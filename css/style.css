@@ -324,3 +324,28 @@ footer .btn-primary{
     color: var(--grayish-blue);
     font-size: 14px;
 }
+
+/*  RESPONSIVE */
+
+/* for tablet */
+
+@media (min-width : 760px) {
+    :root { --px : 80px}
+
+    /*  === home === */
+    .home-text{
+        font-size: 18px;
+        max-width: 400px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .service-card-group{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* blog */
+
+    .blog .section-title{margin-bottom: 50px;}
+    .article-card-group{ grid-template-columns: repeat(2 ,1fr);}
+}
