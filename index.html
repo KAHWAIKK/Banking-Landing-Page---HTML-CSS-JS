@@ -40,7 +40,7 @@
                     </g>
                   </svg>
 
-                <button class="navbar-toggle-btn ">
+                <button class="navbar-toggle-btn">
                     <span class="one"></span>
                     <span class="two"></span>
                     <span class="three"></span>
@@ -66,7 +66,7 @@
             <!--  == HOME SECTION == -->
               <section class="home" id="home">
 
-                <div class="home-img-button">
+                <div class="home-img-box">
                   <img src="./images/image-mockups.png" alt="easybank-banner" class="home-img">
                 </div>
 
@@ -101,9 +101,9 @@
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, exercitationem delectus tempora repudiandae explicabo distinctio.
                     </p>
                   </div>
-                </div>
+                
 
-                <div class="service-card-group">
+                
 
                   <div class="service-card">
                     <img src="/images/icon-budgeting.svg" alt="simple budgetting icon" class="card-icon">
@@ -114,9 +114,9 @@
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, exercitationem delectus tempora repudiandae explicabo distinctio.
                     </p>
                   </div>
-                </div>
+                
 
-                <div class="service-card-group">
+                
 
                   <div class="service-card">
                     <img src="/images/icon-onboarding.svg" alt="onboarding icon" class="card-icon">
@@ -127,9 +127,9 @@
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, exercitationem delectus tempora repudiandae explicabo distinctio.
                     </p>
                   </div>
-                </div>
                 
-                <div class="service-card-group">
+                
+                
 
                   <div class="service-card">
                     <img src="/images/icon-api.svg" alt="Open API icon" class="card-icon">
@@ -311,7 +311,22 @@
      </div>
     
 
+     <!--  custom js -->
 
+     <script>
+
+        const navbarToggleBtn = document.querySelector(".navbar-toggle-btn")
+        const navbarNav = document.querySelector(".navbar-nav")
+
+        const navbarToggleFunc = () =>{
+          navbarToggleBtn.classList.toggle('active')
+          navbarNav.classList.toggle('active')
+        }
+        
+        navbarToggleBtn.addEventListener('click' , navbarToggleFunc)
+
+
+     </script>
 
 
 
